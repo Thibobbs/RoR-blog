@@ -1,3 +1,4 @@
 <% @posts.each do |post| %>
-     <p><%= link_to post.content, post_path(post) %></p>
+    <h1><%= post.user.email %></h1>
+    <p><%= link_to post.content, post_path(post) %></p>
 <% end %>
