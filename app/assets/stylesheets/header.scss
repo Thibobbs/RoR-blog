@@ -1,0 +1,27 @@
+.header {
+    height: 80px;
+    display: flex;
+    background: #4868AD;
+    align-items: center;
+    color: #ffffff;
+}
+
+.header a {
+    text-decoration: none;
+    padding-left: 15px;
+    color: #ffffff;
+}
+
+.header__menu ul {
+    display: flex;
+    list-style: none;
+
+    li {
+        padding-left: 15px;
+    }
+}
+
+.header__connection {
+    margin-left: auto;
+    margin-right: 80px;
+}

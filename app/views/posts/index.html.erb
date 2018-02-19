@@ -1,4 +1,4 @@
+<h1><%= link_to "Write a post", new_post_path %></h1>
 <% @posts.each do |post| %>
-    <h1><%= post.user.email %></h1>
-    <p><%= link_to post.content, post_path(post) %></p>
+    <%= render partial: 'posts/post', locals: {post: post} %>
 <% end %>

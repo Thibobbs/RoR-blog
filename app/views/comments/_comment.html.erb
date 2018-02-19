@@ -1,10 +1,15 @@
 <% @comments.each do |comment| %>
-    <p><b><%= comment.user.email %></b></p>
-    <p><%= comment.content %></p>
-    <% if comment.user == current_user %>
+    
+<div class="comment">
+    <h3 class="comment__user"><%= comment.user.email %></h3>
+    <p class="comment__date"><%= comment.created_at.strftime("%e %B %Y %I:%M %p") %></p>
+    <p class="comment__content"><%= comment.content %></p>
+
+    <% if comment.user == current_user or @post.user == current_user %>
         <%= link_to "Delete comment", [comment.post, comment], :method => 'delete' %>
         <%= link_to "Edit comment", edit_post_comment_path(comment.post, comment) %>
     <% end %>
+</div>
 
 <% end %>
 

@@ -1,0 +1,6 @@
+<div class="post">
+    <h3 class="post__user"><%= post.user.email %></h3>
+    <p class="post__date"><%= post.created_at.strftime("%e %B %Y %I:%M %p") %></p>
+    <p class="post__content"><%= post.content %></p>
+    <%= link_to "See more", post_path(post) %>
+</div>
