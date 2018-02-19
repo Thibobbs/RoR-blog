@@ -1,5 +1,5 @@
 <div class="post">
-    <h3 class="post__user"><%= link_to post.user.email, post_path(post) %></h3>
+    <h3 class="post__user"><%= link_to post.user.email, user_posts_path(post.user.id) %></h3>
     <p class="post__date"><%= post.created_at.strftime("%e %B %Y %I:%M %p") %></p>
     <p class="post__content"><%= post.content %></p>
     <%= link_to "See more", post_path(post) %>
