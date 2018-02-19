@@ -9,6 +9,7 @@ class PostsController < ApplicationController
     end
 
     def show
+        @comments = Comment.where(post_id: @post).order("created_at ASC")
     end
 
     def new
@@ -54,7 +55,7 @@ private
     end
 
     def correct_user
-        @user= User.find(current_user.id)
-         redirect_to(root_url) unless current_user.id ==@post.user.id
+        @user = User.find(current_user.id)
+        redirect_to(root_url) unless current_user.id == @post.user_id
     end
 end
