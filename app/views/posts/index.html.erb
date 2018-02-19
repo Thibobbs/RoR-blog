@@ -1,4 +1,4 @@
-<h1><%= link_to "Write a post", new_post_path %></h1>
+<h1><%= link_to t("write_post"), new_post_path %></h1>
 <% @posts.each do |post| %>
     <%= render partial: 'posts/post', locals: {post: post} %>
 <% end %>

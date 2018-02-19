@@ -30,4 +30,17 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  hello: "Hello"
+  more: "See more"
+  write_post: "Write a post"
+  home: "Home"
+  sign_out: "Sign out"
+  sign_up: "Sign up"
+  sign_in: "Sign in"
+  new_post: "New Post"
+  back: "Back"
+  create_post: "Create Post"
+  comment: "Comment"
+  create_comment: "Post Comment"
+  edit: "Edit"
+  delete: "Delete"

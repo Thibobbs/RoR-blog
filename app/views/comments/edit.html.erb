@@ -1,6 +1,6 @@
 <%= form_for([@post, @comment]) do |f| %>
 
-    <%= f.label :content %><br>
+    <%= f.label t("comment") %><br>
     <%= f.text_area :content %><br>
 
     <%= f.submit %>
