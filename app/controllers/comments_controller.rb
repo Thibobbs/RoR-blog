@@ -45,7 +45,7 @@ private
 
     def correct_user
         @user = User.find(current_user.id)
-        redirect_to(post_path(@post)) unless current_user.id == @comment.user_id
+        redirect_to(post_path(@post)) unless current_user.id == @comment.user_id or @post.user_id == current_user.id
     end
 
 end
